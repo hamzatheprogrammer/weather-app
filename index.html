@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="m-head">Weather app</h1>
+
+  <form onsubmit="getweather(); return false;">
+    <input type="text" required name="cityname" id="cityname" placeholder="Enter your city name" class="city">
+    <input type="submit" value="Search" class="search">
+  </form>
+  <div id="res-check" class="res-check"></div>
+
+  <div id="cards" class="card">
+    <div id="card-1" class="card-1 card-item"><h3 class="b-h">City</h3><p class="b-p" id="city"></p></div>
+    <div id="card-2" class="card-2 card-item"><h3 class="b-h">Region</h3><p class="b-p" id="region"></p></div>
+    <div id="card-3" class="card-3 card-item"><h3 class="b-h">Country</h3><p class="b-p" id="country"></p></div>
+    <div id="card-3" class="card-3 card-item"><h3 class="b-h">Temprature in c</h3><p class="b-p" id="temp_c"></p></div>
+    <div id="card-3" class="card-3 card-item"><h3 class="b-h">Tempreture in f</h3><p class="b-p" id="temp_f"></p></div>
+    <div id="card-3" class="card-3 card-item"><h3 class="b-h">Longitude</h3><p class="b-p" id="lon"></p></div>
+    <div id="card-3" class="card-3 card-item"><h3 class="b-h">Latitude</h3><p class="b-p" id="lat"></p></div>
+    <div id="card-3" class="card-3 card-item"><h3 class="b-h">Humidity</h3><p class="b-p" id="humidity"></p></div>
+    <div id="card-3" class="card-3 card-item"><h3 class="b-h">Wind speed</h3><p class="b-p" id="wind"></p></div>
+    <div id="card-3" class="card-3 card-item"><h3 class="b-h">Uv</h3><p class="b-p" id="uv"></p></div>
+    <div id="card-3" class="card-3 card-item"><h3 class="b-h">Condition</h3><p class="b-p" id="condition"></p></div>
+    <div id="card-3" class="card-3 card-item"><h3 class="b-h">Vision</h3><p class="b-p" id="vision"></p></div>
+    <div id="card-3" class="card-3 card-item"><h3 class="b-h">wind direction</h3><p class="b-p" id="winddir"></p></div>
+    <div id="card-3" class="card-3 card-item"><h3 class="b-h">Cloud</h3><p class="b-p" id="cloud"></p></div>
+    <div id="card-3" class="card-3 card-item"><h3 class="b-h">Pressure</h3><p class="b-p" id="pressure"></p></div>
+  </div> 
+
+  <script src="weather.js"></script>
+  <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+</body>
+</html>
