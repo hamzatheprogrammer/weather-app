@@ -1,56 +1,58 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: black;
     color: white;
 }
-.m-head{
+
+.m-head {
     text-align: center;
+    margin-top: 20px;
 }
-.city{
-    margin-top: 30px;
-    margin-left: 90px;
-    margin-right: 20px;
+
+.city {
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
     border: 2px solid white;
     padding: 10px;
     border-radius: 10px;
-    width: 70%;
+    width: 90%;
+    max-width: 70%; /* Limit maximum width for larger screens */
 }
-.search{
+
+.search {
     border: 2px solid white;
     padding: 10px;
     border-radius: 10px;
-    width: 7%;
-    margin-bottom: 40px;
+    width: 90%;
+    max-width: 150px; /* Limit maximum width for larger screens */
+    margin-bottom: 20px;
 }
-.b-h{
-    margin: 0px;
-}
-.card-item{
+
+.card-item {
     border: 1px solid white;
-    width: calc(16% - 9px);
-    height: 80px;
+    width: calc(20% - 20px); /* Five items per row by default */
+    height: 120px;
     padding: 10px;
     text-align: center;
-    height: 120px;
-    margin: 20px;
+    margin: 10px;
 }
-.card{
+
+.card {
     display: flex;
-    flex-direction: row;   
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
-.b-p{
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+
+.b-p {
+    padding: 10px;
 }
-.res-check{
-    font-family: sans-serif;
-    font-size: x-large;
-    font-weight: bold;
-    text-align: center;
+
+/* Media Query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+    .card-item {
+        width: calc(50% - 20px); /* Two items per row on smaller screens */
+    }
 }
