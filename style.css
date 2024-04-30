@@ -56,3 +56,10 @@
         width: calc(50% - 20px); /* Two items per row on smaller screens */
     }
 }
+.footer{
+    font-size: xx-large;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-style: italic;
+    text-align: center;
+}
