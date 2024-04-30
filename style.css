@@ -19,7 +19,7 @@
     padding: 10px;
     border-radius: 10px;
     width: 90%;
-    max-width: 70%; /* Limit maximum width for larger screens */
+    max-width: 70%; 
 }
 
 .search {
@@ -49,11 +49,16 @@
 .b-p {
     padding: 10px;
 }
+.res-check{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: sans-serif;
+}
 
-/* Media Query for smaller screens (e.g., mobile devices) */
 @media screen and (max-width: 768px) {
     .card-item {
-        width: calc(50% - 20px); /* Two items per row on smaller screens */
+        width: calc(50% - 20px); 
     }
 }
 .footer{
