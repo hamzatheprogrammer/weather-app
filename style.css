@@ -27,13 +27,13 @@
     padding: 10px;
     border-radius: 10px;
     width: 90%;
-    max-width: 150px; /* Limit maximum width for larger screens */
+    max-width: 150px; 
     margin-bottom: 20px;
 }
 
 .card-item {
     border: 1px solid white;
-    width: calc(20% - 20px); /* Five items per row by default */
+    width: calc(20% - 20px); 
     height: 120px;
     padding: 10px;
     text-align: center;
@@ -49,17 +49,21 @@
 .b-p {
     padding: 10px;
 }
-.res-check{
-    text-align: center;
-    font-size: x-large;
-    font-weight: bold;
-    font-family: sans-serif;
-}
 
 @media screen and (max-width: 768px) {
     .card-item {
         width: calc(50% - 20px); 
     }
+    .search{
+        margin-top: 2vh;
+        margin-left: 24.3vw;
+    }
+}
+.res-check{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: sans-serif;
 }
 .footer{
     font-size: xx-large;
